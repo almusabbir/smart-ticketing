@@ -4,10 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Ticketing</title>
+
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.1/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
+        .font-raleway {
+            font-family: "Raleway", sans-serif;
+        }
+        .font-inter {
+            font-family: "Inter", sans-serif;
+        }
+    </style>
 </head>
 <body>
-    
+    <!-- Navbar Section -->
+    <section class="mx-10">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <a class="btn btn-ghost text-xl">P-Ticket</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Destination</a></li>
+                    <li><a>Search</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a class="btn text-[#1DD100] bg-[#1DD1001A]">Bus <img src="images/bus-icon.png" alt=""></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banner Section -->
+    <section class="mx-10 bg-[url('images/banner.png')] flex flex-col justify-center items-center bg-no-repeat" style="height: 40vw; width: 100vw; background-size: 95% 100%;">
+        <h1 class="text-white text-base lg:text-6xl font-extrabold">End-to-End Travel with</h1>
+        <h1 class="text-[#1DD100] text-base lg:text-6xl font-extrabold">P Paribahan</h1>
+        <p class="text-gray-300 text-xs lg:text-lg font-normal text-center">You can run tests and view results within the app.</p>
+        <button class="btn btn-primary bg-[#1DD100] text-black border-0 text-xs lg:text-xl font-bold">Buy Tickets</button>
+    </section>
 </body>
 </html>
