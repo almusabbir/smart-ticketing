@@ -47,7 +47,8 @@
         <h1 class="text-white text-base lg:text-6xl font-extrabold">End-to-End Travel with</h1>
         <h1 class="text-[#1DD100] text-base lg:text-6xl font-extrabold">P Paribahan</h1>
         <p class="text-gray-300 text-xs lg:text-lg font-normal text-center">You can run tests and view results within the app.</p>
-        <button class="btn btn-primary bg-[#1DD100] text-black border-0 text-xs lg:text-xl font-bold">Buy Tickets</button>
+        <a href="#functions"><button class="btn btn-primary bg-[#1DD100] text-black border-0 text-xs lg:text-xl font-bold">Buy Tickets</button></a>
+        
     </section>
 
     <!-- Best Offers Section -->
@@ -83,16 +84,16 @@
     </section>
 
     <!-- PH Paribahan -->
-    <section class="mx-10 mt-10 bg-[#F7F8F8] border-t-4 border-[#1DD100] rounded-3xl pt-10">
-        <h1 class="text-4xl font-bold">PH Paribahan</h1>
-        <p class="text-lg font-normal">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined.</p>
-        <div class="bg-white rounded-xl p-8 flex justify-evenly items-center">
+    <section id="functions" class="mx-10 mt-10 bg-[#F7F8F8] border-t-4 border-[#1DD100] rounded-3xl pt-10">
+        <h1 class="text-4xl font-bold text-center">PH Paribahan</h1>
+        <p class="text-lg font-normal text-center">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined.</p>
+        <div class="bg-white rounded-xl p-8 lg:flex justify-evenly items-center">
             <div>
-                <div class="flex justify-between">
-                    <div class="flex justify-between w-96">
+                <div class="lg:flex justify-between">
+                    <div class="flex justify-between lg:w-96">
                         <img src="images/bus-logo.png" alt="">
                         <div>
-                            <h1 class="text-3xl font-bold">Greenline Paribahan</h1>
+                            <h1 class="text-base lg:text-3xl font-bold">Greenline Paribahan</h1>
                             <p class="text-lg font-normal text-gray-500">Coach-009-WEB ! AC_Business</p>
                         </div>
                     </div>
@@ -102,17 +103,17 @@
                     </div>
                 </div>
                 <div class="bg-[#F7F8F8] rounded-xl p-4 mt-4">
-                    <div class="flex justify-between">
+                    <div class="lg:flex justify-between">
                         <p class="text-lg font-semibold text-gray-500">Route</p>
                         <p class="text-lg font-semibold">Dhaka-Sylhet</p>
                     </div>
                     <hr>
-                    <div class="flex justify-between mt-4">
+                    <div class="lg:flex justify-between mt-4">
                         <p class="text-lg font-semibold text-gray-500">Departure Time</p>
                         <p class="text-lg font-semibold">9:00pm</p>
                     </div>
                     <hr>
-                    <div class="flex justify-between mt-4 gap-4">
+                    <div class="lg:flex justify-between mt-4 gap-4">
                         <p class="text-base font-medium bg-gray-400 p-2 rounded-lg">Boarding Point - Laxmipur</p>
                         <p class="text-base font-medium bg-gray-400 p-2 rounded-lg">Dropping Point - Bogura</p>
                         <p class="text-base font-medium bg-gray-400 p-2 rounded-lg">Est. Time - 11 Hour</p>
@@ -125,7 +126,7 @@
                 <p class="text-2xl font-semibold text-gray-400">Per Seat</p>
             </div>
         </div>
-        <div class="bg-white rounded-xl p-8">
+        <div class="bg-white rounded-xl p-8 lg:flex justify-evenly items-center">
             <div>
                 <h1 class="text-2xl font-semibold">Select Your Seat</h1>
                 <hr>
@@ -220,7 +221,45 @@
                 </div>
             </div>
             <div>
+                <h1 class="text-2xl font-semibold">Select Your Seat</h1>
+                <hr>
+                <div class="bg-[#F7F8F8]">
+                    <div class="flex justify-between mt-2">
+                        <p class="text-base font-medium">Seat <span class="bg-[#1DD100] text-white text-base font-medium rounded-full">2</span></p>
+                        <p class="text-base font-medium">Class</p>
+                        <p class="text-base font-medium">Price</p>
+                    </div>
+                    <hr>
+                    <div id="ticket-container mt-2">
 
+                    </div>
+                    <hr>
+                    <div class="flex justify-between mt-2">
+                        <p class="text-base font-medium">Total Price</p>
+                        <p class="text-base font-medium">BDT <span>1100</span></p>
+                    </div>
+                    <div class="flex justify-between">
+                        <input type="text" placeholder="Have any coupon?" class="input input-bordered w-full max-w-xs"/>
+                        <button class="btn btn-primary bg-[#1DD100] text-white border-0 text-xs lg:text-xl font-bold">Apply</button>
+                    </div>
+                    <div class="flex justify-between mt-2">
+                        <p class="text-base font-medium">Grand Total</p>
+                        <p class="text-base font-medium">BDT <span>1100</span></p>
+                    </div>
+                </div>
+                <h1 class="text-base font-semibold mt-2">Passenger Name*</h1>
+                <input type="text" placeholder="Enter your name" class="input input-bordered w-full max-w-xs"/>
+                <h1 class="text-base font-semibold mt-2">Phone number*</h1>
+                <input type="number" placeholder="Enter your phone number" class="input input-bordered w-full max-w-xs"/>
+                <h1 class="text-base font-semibold mt-2">Email ID</h1>
+                <input type="email" placeholder="Enter your email id" class="input input-bordered w-full max-w-xs"/>
+                <div>
+                    <button class="btn btn-primary bg-[#1DD100] text-white border-0 text-xs lg:text-xl font-bold w-full mt-2">Next</button>
+                </div>
+                <div class="flex justify-center gap-10">
+                    <p class="text-gray-400 text-base font-normal underline">Terms and Conditions</p>
+                    <p class="text-gray-400 text-base font-normal underline">Cancellation Policy</p>
+                </div>
             </div>
         </div>
     </section>
