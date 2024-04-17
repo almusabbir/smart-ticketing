@@ -106,3 +106,15 @@ function discount() {
     grandTotalPrice = document.getElementById('grand-total');
     grandTotalPrice.innerText = grandTotalPriceValue;
 }
+
+let phoneNumber = document.getElementById('phone-number');
+let nextButton = document.getElementById('next-button');
+
+phoneNumber.addEventListener('keyup', function() {
+    if (arr.length !== 0 && phoneNumber.value !== "") {
+        nextButton.removeAttribute('disabled');
+    }
+    else {
+        nextButton.setAttribute('disabled', true);
+    }
+});
